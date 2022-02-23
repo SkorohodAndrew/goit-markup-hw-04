@@ -225,7 +225,7 @@ img {
   text-align: center;
 }
 .team-item .upper {
-  margin: 30px;
+  padding: 30px;
 }
 
 .team-item {
@@ -358,7 +358,7 @@ img {
   flex-wrap: wrap;
 }
 .item .upper-item {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 .gallery .item {
   width: 370px;
@@ -375,10 +375,7 @@ img {
 .gallery .item:nth-child(3n + 3) {
   margin-right: 0;
 }
-.item .upper-item {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 .gallery-title {
   color: var(--primary-text-color);
   font-weight: 700;
