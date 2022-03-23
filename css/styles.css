@@ -115,7 +115,16 @@ p {
 .inner .item + .item {
   margin-left: 50px;
 }
+/* icon */
+.icon {
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .header-phone {
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
   text-decoration: none;
 }
@@ -123,17 +132,27 @@ p {
 .header-phone:focus {
   color: var(--accent-color);
 }
+
 .main-nav {
   display: flex;
   align-items: center;
 }
 
 /* Hero */
+
 .hero {
   text-align: center;
   background-color: var(--primaty-bc-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../images/icon/hero.svg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero .item {
 }
