@@ -142,10 +142,10 @@ p {
 
 .hero {
   text-align: center;
-  background-color: var(--primaty-bc-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../images/icon/hero.svg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/icon/hero.svg');
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,6 +181,28 @@ p {
 /* Контент */
 .section {
   padding: 94px 0;
+}
+.upper::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--title-bc-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-delivere.item:nth-child(1)::before {
+  background-image: url(../images/icon/plus/antenna.svg);
+}
+.icon-delivere.item:nth-child(2)::before {
+  background-image: url(../images/icon/plus/clock.svg);
+}
+.icon-delivere.item:nth-child(3)::before {
+  background-image: url(../images/icon/plus/diagram.svg);
+}
+.icon-delivere.item:nth-child(4)::before {
+  background-image: url(../images/icon/plus/astronaut.svg);
 }
 
 .benefits-item {
@@ -243,7 +265,7 @@ img {
   flex-wrap: wrap;
   text-align: center;
 }
-.team-item .upper {
+.team-item .upper-card {
   padding: 30px;
 }
 
@@ -268,11 +290,36 @@ img {
   letter-spacing: 0.03em;
 }
 .team-work {
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+}
+
+.actions {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.media {
+  margin-right: 10px;
+  border: none;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  align-content: center;
+  background-color: red;
+  fill: var();
+}
+
+.media:hover {
+  color: var(--title-text-color);
+  background-color: var(--accent-color);
+}
+.media:last-child {
+  margin-right: 0;
 }
 /* Client */
 
