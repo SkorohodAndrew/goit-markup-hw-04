@@ -347,7 +347,7 @@ img {
 /* Footer */
 
 .footer {
-  background-color: var(--primaty-bc-color);
+  background-color: var(--primary-text-color);
   padding: 60px 0;
 }
 
@@ -400,8 +400,41 @@ img {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+.footer-title {
+  color: var(--title-text-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .media-list {
   display: flex;
+}
+.media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 50px;
+  height: 44px;
+  width: 44px;
+  background-color: var(--primaty-bc-color);
+  fill: var(--title-text-color);
+}
+.media-item:hover {
+  background-color: var(--accent-color);
+}
+.footer-list {
+  display: flex;
+}
+.footer-icon {
+  margin-left: 70px;
+  justify-content: center;
+  align-content: center;
 }
 /* ПОРТФОЛИО */
 .site-nav .currently {
