@@ -347,7 +347,7 @@ img {
 /* Footer */
 
 .footer {
-  background-color: var(--primary-text-color);
+  background-color: var(--primaty-bc-color);
   padding: 60px 0;
 }
 
@@ -422,7 +422,7 @@ img {
   border-radius: 50px;
   height: 44px;
   width: 44px;
-  background-color: var(--primaty-bc-color);
+  background-color: var(--secondary-text-color);
   fill: var(--title-text-color);
 }
 .media-item:hover {
@@ -432,9 +432,16 @@ img {
   display: flex;
 }
 .footer-icon {
-  margin-left: 70px;
   justify-content: center;
   align-content: center;
+  flex-direction: row;
+}
+.footer-colum {
+  display: flex;
+  align-items: baseline;
+}
+.footer-colum-list {
+  margin-right: 70px;
 }
 /* ПОРТФОЛИО */
 .site-nav .currently {
