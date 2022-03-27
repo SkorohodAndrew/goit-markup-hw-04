@@ -11,6 +11,8 @@
   --primary-header-color: #ffffff;
   --primaty-bc-color: #2f303a;
   --title-bc-color: #f5f4fa;
+  /* Цвет Значка */
+  --primary-icon-color: #afb1b8;
 }
 
 body {
@@ -146,7 +148,7 @@ p {
   padding-bottom: 200px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/icon/hero.svg');
-
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -182,34 +184,12 @@ p {
 .section {
   padding: 94px 0;
 }
-.upper::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--title-bc-color);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-delivere.item:nth-child(1)::before {
-  background-image: url(../images/icon/plus/antenna.svg);
-}
-.icon-delivere.item:nth-child(2)::before {
-  background-image: url(../images/icon/plus/clock.svg);
-}
-.icon-delivere.item:nth-child(3)::before {
-  background-image: url(../images/icon/plus/diagram.svg);
-}
-.icon-delivere.item:nth-child(4)::before {
-  background-image: url(../images/icon/plus/astronaut.svg);
-}
 
 .benefits-item {
   display: flex;
   justify-content: space-between;
 }
-.benefits-item .item {
+.benefits-item .upper-item {
   width: 270px;
 }
 
@@ -230,6 +210,20 @@ p {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+.item {
+  margin-right: 30px;
+}
+.upper {
+  justify-items: center;
+  align-items: center;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--title-bc-color);
+  fill: var();
+}
+
 /* Что мы делаем */
 .work.section {
   padding-top: 0;
@@ -307,40 +301,45 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
   border: none;
   height: 44px;
   width: 44px;
   border-radius: 50%;
-  background-color: var(--title-text-color);
-  fill: var(--secondary-text-color);
+  background-color: var(--primary-header-color);
+  fill: var(--primary-icon-color);
 }
 
-.media:hover {
+.media:hover,
+.media:focus {
   fill: var(--title-text-color);
   background-color: var(--accent-color);
 }
-.media:last-child {
+.media-notitia:last-child {
   margin-right: 0;
+}
+.media-notitia {
+  margin-right: 10px;
 }
 /* Client */
 .clientage {
   display: flex;
 }
-
+.clientage-item {
+  margin-right: 30px;
+}
 .clientage-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  fill: var(--secondary-text-color);
+  fill: var(--primary-icon-color);
 }
 
-.clientage-list:hover {
+.clientage-list:hover,
+.clientage-list:focus {
   fill: var(--accent-color);
 }
 
@@ -414,18 +413,21 @@ img {
 .media-list {
   display: flex;
 }
+.media-catalog {
+  margin-right: 10px;
+}
 .media-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
   border-radius: 50px;
   height: 44px;
   width: 44px;
-  background-color: var(--secondary-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
   fill: var(--title-text-color);
 }
-.media-item:hover {
+.media-item:hover,
+.media-item:focus {
   background-color: var(--accent-color);
 }
 .footer-list {
@@ -467,6 +469,7 @@ img {
   border-radius: 4px;
 }
 .button-type .button-list {
+  cursor: pointer;
   padding: 6px 22px 6px 22px;
   background-color: var(--title-bc-color);
   font-weight: 500;
@@ -482,17 +485,24 @@ img {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
 }
-.item-list:hover {
+.gallery-list {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery-list:hover,
+.gallery-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .item-list .upper-item {
   padding: 20px 24px;
 }
